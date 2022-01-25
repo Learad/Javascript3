@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 3</title>
+    <script type="text/javascript">
+        function beregn() {
+            const navn = document.getElementById("navn")
+            const hoydeS = document.getElementById("hoyde")
+            const vektS = document.getElementById("vekt")
+
+            const hoyde = Number(hoydeS)
+            const vekt = Numberg(vektS)
+            if (isNaN(hoyde) || isNaN(vekt)){
+                document.getElementById("bmi").innerHTML = "Feil: Du må skrive tall inn i vekt og høyde"
+            }
+        }else {
+            document.getElementById("bmi").innerHTML
+        }
+    </script>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Navn</td>
+        <td type="text" id="navn"></td>
+    </tr>
+    <tr>
+        <td>Høyde</td>
+        <td type="text" id="hoyde"></td>
+    </tr>
+    <tr>
+        <td>Vekt</td>
+        <td type="text" id="vekt"></td>
+    </tr>
+    <tr>
+        <td><button value="Beregn BMI" onclick="beregn()">Beregn BMI</button></td>
+    </tr>
+</table>
+
+</body>
+</html>
